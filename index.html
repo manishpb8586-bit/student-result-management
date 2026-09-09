@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Student Result Management</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="container"><h1>Student Result Management</h1><p class="subtitle">Calculate marks, percentage, grade and result instantly.</p>
+<section class="panel"><form id="form"><div class="grid">
+<input id="name" placeholder="Student name" required><input id="roll" placeholder="Roll number" required>
+<input id="maths" type="number" min="0" max="100" placeholder="Maths (0-100)" required>
+<input id="science" type="number" min="0" max="100" placeholder="Science (0-100)" required>
+<input id="english" type="number" min="0" max="100" placeholder="English (0-100)" required>
+<input id="computer" type="number" min="0" max="100" placeholder="Computer (0-100)" required>
+</div><button>Calculate Result</button></form></section>
+<section id="result" class="result hidden"><h2>Result</h2><p><b>Name:</b> <span id="rname"></span> &nbsp; <b>Roll:</b> <span id="rroll"></span></p><div id="subjects"></div>
+<div class="summary"><div>Total<strong id="total"></strong></div><div>Percentage<strong id="percent"></strong></div><div>Grade<strong id="grade"></strong></div><div>Result<strong id="status"></strong></div></div>
+<button type="button" id="clear">Clear</button></section></main><script src="script.js"></script></body></html>
